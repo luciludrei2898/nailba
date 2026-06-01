@@ -1,0 +1,10 @@
+<svg width="900" height="360" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="320" fill="#F6EEDC"/>
+  <rect width="900" height="360" fill="#F6EEDC"/>
+  <path d="M150 198L88 216L137 235L124 300L176 254L242 279L213 221L261 184L195 182L181 117L150 198Z" fill="#F3A7AA"/>
+  <path d="M682 212L643 223L674 237L667 279L699 251L742 265L724 228L755 204L712 202L703 161L682 212Z" fill="#F6B3B5"/>
+  <path d="M210 98L190 103L204 114L201 135L218 121L240 129L231 110L247 96L225 96L220 75L210 98Z" fill="#F3A7AA"/>
+  <path d="M770 165L754 169L765 178L762 196L776 185L794 191L787 175L800 164L782 164L778 147L770 165Z" fill="#F6B3B5"/>
+  <text x="165" y="235" fill="#2F2A2E" font-family="Georgia, Times New Roman, serif" font-size="146" font-style="italic" font-weight="700">nailba</text>
+  <text x="578" y="160" fill="#2F2A2E" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" letter-spacing="2">NAILS STUDIO</text>
+</svg>
