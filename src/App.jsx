@@ -31,6 +31,7 @@ export default function App() {
   const [services, setServices] = useState(() => loadServices());
   const [sales, setSales] = useState(() => loadSales());
   const [ticket, setTicket] = useState([]);
+  const [paymentMethod, setPaymentMethod] = useState('efectivo');
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('Todas');
   const [draft, setDraft] = useState(newServiceDraft);
@@ -121,6 +122,7 @@ export default function App() {
       createdAt: new Date().toISOString(),
       items: ticket,
       total: Number(ticketTotal.toFixed(2)),
+      paymentMethod,
     };
 
     setSales((current) => [...current, sale]);
@@ -289,6 +291,8 @@ export default function App() {
           <TicketPanel
             items={ticket}
             total={ticketTotal}
+            paymentMethod={paymentMethod}
+            onPaymentMethodChange={setPaymentMethod}
             onIncrease={(serviceId) => changeTicketQuantity(serviceId, 1)}
             onDecrease={(serviceId) => changeTicketQuantity(serviceId, -1)}
             onRemove={removeFromTicket}

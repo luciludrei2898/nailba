@@ -1,6 +1,8 @@
 export function TicketPanel({
   items,
   total,
+  paymentMethod,
+  onPaymentMethodChange,
   onIncrease,
   onDecrease,
   onRemove,
@@ -49,6 +51,24 @@ export function TicketPanel({
             </div>
           ))
         )}
+      </div>
+
+      <div className="payment-section">
+        <p className="eyebrow">Método de pago</p>
+        <div className="payment-options">
+          {['efectivo', 'tarjeta'].map((method) => (
+            <label key={method} className={paymentMethod === method ? 'payment-option active' : 'payment-option'}>
+              <input
+                type="radio"
+                name="paymentMethod"
+                value={method}
+                checked={paymentMethod === method}
+                onChange={() => onPaymentMethodChange(method)}
+              />
+              <span>{method === 'tarjeta' ? 'Tarjeta' : 'Efectivo'}</span>
+            </label>
+          ))}
+        </div>
       </div>
 
       <div className="ticket-totals">

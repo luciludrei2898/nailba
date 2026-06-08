@@ -12,6 +12,7 @@ const sampleSales = [
       { serviceId: 'svc-8', nombre: 'Decoracion nail art', precio: 6, cantidad: 1, categoria: 'Extras' },
     ],
     total: 28,
+    paymentMethod: 'tarjeta',
   },
   {
     id: 'sale-demo-2',
@@ -20,6 +21,7 @@ const sampleSales = [
       { serviceId: 'svc-7', nombre: 'Pedicura semipermanente', precio: 26, cantidad: 1, categoria: 'Pedicura' },
     ],
     total: 26,
+    paymentMethod: 'efectivo',
   },
 ];
 

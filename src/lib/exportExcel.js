@@ -15,10 +15,13 @@ function monthLabel(date) {
 
 function saleToRow(sale) {
   const date = new Date(sale.createdAt);
+  const paymentLabel = sale.paymentMethod === 'tarjeta' ? 'Tarjeta' : 'Efectivo';
+
   return {
     Fecha: date.toLocaleDateString('es-ES'),
     Hora: date.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }),
     Servicios: sale.items.map((item) => `${item.nombre} x${item.cantidad}`).join(', '),
+    'Metodo de pago': paymentLabel,
     Total: sale.total,
   };
 }

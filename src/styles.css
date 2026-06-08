@@ -328,7 +328,8 @@ button {
 
 .ticket-item span,
 .sale-row span,
-.empty-state span {
+.empty-state span,
+.sale-payment {
   display: block;
   color: var(--text-soft);
   font-size: 0.92rem;
@@ -359,6 +360,38 @@ button {
 .text-button {
   background: transparent;
   color: var(--rose-1);
+}
+
+.payment-section {
+  display: grid;
+  gap: 8px;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(122, 116, 48, 0.08);
+  border: 1px solid rgba(91, 87, 16, 0.12);
+  cursor: pointer;
+  color: var(--olive-2);
+}
+
+.payment-option.active {
+  background: rgba(122, 116, 48, 0.18);
+  border-color: rgba(91, 87, 16, 0.28);
+}
+
+.payment-option input {
+  accent-color: var(--olive-2);
 }
 
 .ticket-totals {

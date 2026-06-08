@@ -59,6 +59,7 @@ export function SalesPanel({
                   <div>
                     <strong>{new Date(sale.createdAt).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}</strong>
                     <span>{sale.items.map((item) => `${item.nombre} x${item.cantidad}`).join(', ')}</span>
+                    <span className="sale-payment">Pago: {sale.paymentMethod === 'tarjeta' ? 'Tarjeta' : 'Efectivo'}</span>
                   </div>
                   <div className="sale-actions">
                     <strong>{sale.total.toFixed(2)} EUR</strong>
