@@ -24,7 +24,7 @@ export function TicketPanel({
       <div className="ticket-items">
         {items.length === 0 ? (
           <div className="empty-state">
-            <p>Aun no has anadido servicios.</p>
+            <p>Aun no has añadido servicios.</p>
             <span>Toca un servicio para empezar a cobrar.</span>
           </div>
         ) : (
