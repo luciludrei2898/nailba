@@ -9,7 +9,7 @@ import { loadSales, loadServices, saveSales, saveServices } from './lib/storage'
 const tabs = [
   { id: 'cobro', label: 'Cobro' },
   { id: 'servicios', label: 'Servicios' },
-  { id: 'ventas', label: 'Ventas y exportacion' },
+  { id: 'ventas', label: 'Ventas y exportación' },
 ];
 
 const newServiceDraft = {
@@ -217,10 +217,10 @@ export default function App() {
 
       <header className="hero">
         <div className="brand-block">
-          <p className="eyebrow">Uso interno del salon</p>
+          <p className="eyebrow">Uso interno del salón</p>
           <h1 className="brand-title">Nailba</h1>
           <p className="hero-copy">
-            Cobro rapido, control diario y exportacion lista para caja o datafono.
+            Cobro rápido, control diario y exportación lista para caja o datáfono.
           </p>
         </div>
 

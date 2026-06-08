@@ -38,7 +38,7 @@ export function ServicesAdmin({
             />
           </label>
           <label>
-            Categoria
+            Categoría
             <input
               type="text"
               value={draft.categoria}
