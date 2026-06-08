@@ -14,7 +14,7 @@ export function TicketPanel({
       <div className="panel-header">
         <div>
           <p className="eyebrow">Ticket actual</p>
-          <h2>Cobro rapido</h2>
+          <h2>Cobro rápido</h2>
         </div>
         <button type="button" className="button-ghost" onClick={onClear} disabled={items.length === 0}>
           Vaciar
